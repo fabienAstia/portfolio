@@ -3,19 +3,19 @@ import AboutMe from '../AboutMeView';
 import Projects from '../ProjectsView';
 import Skills from '../SkillsView';
 import Contact from '../ContactView'
-export default function HomePage({refs}){
+export default function HomePage(){
     return (
         <>          
-        <section className='introView scroll-margin-top' ref={refs.introRef}>
+        <section className='introView scroll-margin-top' id='intro'>
             <AboutMe/>
         </section>
-        <section className='projectsView scroll-margin-top' ref={refs.projectRef}>
+        <section className='projectsView scroll-margin-top' id='projets'>
             <Projects/>
         </section>
-        <section className='skillsView scroll-margin-top' ref={refs.skillsRef}>
+        <section className='skillsView scroll-margin-top' id='skills'>
             <Skills/>
         </section>
-         <section className='contactView scroll-margin-top' ref={refs.contactRef}>
+         <section className='contactView scroll-margin-top' id='contact'>
             <Contact/>
         </section>
         </>

@@ -1,22 +1,16 @@
 import Header from '../Header'
-import HomePage from '../../views/HomePageView'
-import { useRef } from 'react';
+// import HomePage from '../../views/HomePageView'
+import Footer from '../Footer'
+import { Outlet } from 'react-router-dom';
 
 export default function Layout(){
-    const introRef = useRef(null)
-    const projectRef = useRef(null)
-    const skillsRef = useRef(null)
-    const contactRef = useRef(null)
-    const refs = {introRef, projectRef, skillsRef, contactRef}
-    function goTo(ref){
-        ref.current?.scrollIntoView({behavior:'smooth'});
-    }
     return (
         <>
-        <Header goTo={goTo} refs={refs}/>
+        <Header/>
         <main className='container py-4'>
-            <HomePage refs={refs}/>
+            <Outlet/>
         </main>
+        <Footer/>
         </>
     );
 }

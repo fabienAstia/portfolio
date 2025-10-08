@@ -7,33 +7,11 @@ export default function Contact(){
     return(
         <>
         <h2>Contact</h2>
-        <form>
-            <div className='row row-cols-1 row-cols-md-2'>
-                <div className="col mb-3">
-                    <label htmlFor="firstname" className="form-label">Prénom :</label>
-                    <input type="text" className="form-control" id="firstname"/>
-                </div>
-                <div className="col mb-3">
-                    <label htmlFor="lastName" className="form-label">Nom :</label>
-                    <input type="text" className="form-control" id="lastName"/>
-                </div>
-            </div>
-          
-            <div className="mb-3">
-                <label className="form-label" htmlFor="email">Email :</label>
-                <input type="email" className="form-control" id="email" aria-describedby="emailHelp"/>
-                <div id="emailHelp" className="form-text">Nous ne partagerons jamais votre email.</div>
-            </div>
-            <div className='mb-3'>
-                <textarea name="" className='w-100 form-control' 
-                placeholder='Un commentaire ...' rows={4} maxLength={MAX_CHARS}
-                onChange={(event) => setCount(event.target.value.length)}/>
-                <div className='remaining-char'>{MAX_CHARS - charCount} caractères restants</div>
-            </div>
-            <div className='d-flex justify-content-center'>
-                <button type="submit" className="mt-3 btn btn-outline-dark width-button">Submit</button>
-            </div>
-        </form>
+        <p className='text-center mb-3'>Vous souhaitez me parler d’un projet ou d’une opportunité ?</p>
+        <div className='d-flex justify-content-center gap-3 mb-5'>
+            <a href="mailto:fabien.astiasaran@gmail.com" target='_blank' className='btn btn-outline-dark'>M'écrire un email</a>
+            <a href="https://www.linkedin.com/in/fabien-astiasaran" target='_blank' className='btn btn-outline-dark'>Me contacter sur Linkedin</a>
+        </div>
         </>
     );
 }

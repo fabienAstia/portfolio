@@ -3,9 +3,8 @@ import {Routes, Route} from 'react-router-dom';
 import Layout from '../components/Layout'
 
 const HomePage = lazy(() => import('../views/HomePageView'));
-const Projects = lazy(() => import('../views/ProjectsView'))
-const Skills = lazy(() => import('../views/SkillsView'))
-const Contact = lazy(() => import('../views/ContactView'))
+const LegalNotice = lazy(() => import('../views/LegalNoticeView'))
+const PrivacyPolicy = lazy(()=> import('../views/PrivacyPolicyView'))
 
 export default function Router(){
     return (
@@ -13,9 +12,8 @@ export default function Router(){
             <Routes>
                 <Route path="/" element = {<Layout/>}>
                     <Route index element={<HomePage/>}/>
-                    <Route path="projects" element={<Projects/>}/>
-                    <Route path="skills" element={<Skills/>}/>
-                    <Route path="contact" element={<Contact/>}/>
+                    <Route path="legalNotice" element={<LegalNotice/>}/>
+                    <Route path="privacyPolicy" element={<PrivacyPolicy/>}/>
                 </Route>
             </Routes>
         </Suspense>

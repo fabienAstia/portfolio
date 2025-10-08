@@ -8,3 +8,18 @@
 .header a{
     cursor: pointer;
 }
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+.nav-link:hover{
+    background-color: #888;
+    color: white;
+}
+
+.nav-link:focus {
+    color: white !important;
+    text-decoration: underline 2px white;
+    text-underline-offset: 3px;
+}

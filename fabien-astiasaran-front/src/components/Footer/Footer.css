@@ -1,0 +1,9 @@
+
+.footerWrapper{
+    height: 5rem;
+}
+
+.footerWrapper .pointer{
+    cursor: pointer;
+}
+
