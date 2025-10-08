@@ -2,39 +2,22 @@ import './HomePage.css'
 import AboutMe from '../AboutMeView';
 import Projects from '../ProjectsView';
 import Skills from '../SkillsView';
-import ErrorBoundary from '../../components/ErrorBoundary';
 import Contact from '../ContactView'
-import { useRef } from 'react';
-
-export default function HomePage(){
+export default function HomePage({refs}){
     return (
         <>          
-        <section className='intro' ref={introRef}>
-            <ErrorBoundary fallback={<p>Somenthing went wrong</p>}>
-                <AboutMe/>
-            </ErrorBoundary>
+        <section className='introView scroll-margin-top' ref={refs.introRef}>
+            <AboutMe/>
         </section>
-        
-        <section className='projectsView' ref={projectRef}>
-            <ErrorBoundary fallback={<p>Somenthing went wrong</p>}>
-                <Projects/>
-            </ErrorBoundary>
+        <section className='projectsView scroll-margin-top' ref={refs.projectRef}>
+            <Projects/>
         </section>
-
-        <section className='skillsView' ref={skillsRef}>
-            <ErrorBoundary fallback={<p>Somenthing went wrong</p>}>
-                <Skills/>
-            </ErrorBoundary>
+        <section className='skillsView scroll-margin-top' ref={refs.skillsRef}>
+            <Skills/>
         </section>
-         <section className='contactView' ref={contactRef}>
-            <ErrorBoundary fallback={<p>Somenthing went wrong</p>}>
-                <Contact/>
-            </ErrorBoundary>
+         <section className='contactView scroll-margin-top' ref={refs.contactRef}>
+            <Contact/>
         </section>
         </>
     );
-}
-
-function goTo(){
-
 }

@@ -4,3 +4,7 @@
     top: 0;
     z-index: 30;
 }
+
+.header a{
+    cursor: pointer;
+}

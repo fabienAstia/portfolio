@@ -1,21 +1,22 @@
-// import { Outlet } from 'react-router-dom';
 import Header from '../Header'
+import HomePage from '../../views/HomePageView'
 import { useRef } from 'react';
 
 export default function Layout(){
-    // const introRef = useRef(null)
+    const introRef = useRef(null)
     const projectRef = useRef(null)
-    // const skillsRef = useRef(null)
-    // const contactRef = useRef(null)
-    function goTo(projectRef){
-        projectRef.current?.scrollIntoView();
+    const skillsRef = useRef(null)
+    const contactRef = useRef(null)
+    const refs = {introRef, projectRef, skillsRef, contactRef}
+    function goTo(ref){
+        ref.current?.scrollIntoView({behavior:'smooth'});
     }
     return (
         <>
-            <Header goTo={projectRef}/>
-            <main className='container py-4'>
-                <HomePage goTo={projectRef}/>
-            </main>
+        <Header goTo={goTo} refs={refs}/>
+        <main className='container py-4'>
+            <HomePage refs={refs}/>
+        </main>
         </>
     );
 }
