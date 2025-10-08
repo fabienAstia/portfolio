@@ -10,17 +10,17 @@ export default function Contact(){
         <form>
             <div className='row row-cols-1 row-cols-md-2'>
                 <div className="col mb-3">
-                    <label for="firstname" className="form-label">Prénom :</label>
+                    <label htmlFor="firstname" className="form-label">Prénom :</label>
                     <input type="text" className="form-control" id="firstname"/>
                 </div>
                 <div className="col mb-3">
-                    <label for="lastName" className="form-label">Nom :</label>
+                    <label htmlFor="lastName" className="form-label">Nom :</label>
                     <input type="text" className="form-control" id="lastName"/>
                 </div>
             </div>
           
             <div className="mb-3">
-                <label className="form-label" for="email">Email :</label>
+                <label className="form-label" htmlFor="email">Email :</label>
                 <input type="email" className="form-control" id="email" aria-describedby="emailHelp"/>
                 <div id="emailHelp" className="form-text">Nous ne partagerons jamais votre email.</div>
             </div>
