@@ -1,0 +1,36 @@
+.photo-wrapper{
+    margin-top: -1rem;
+}
+
+#photo{
+    height: 170px;
+    margin-bottom: 1rem;
+}
+
+@media(max-width:992px){
+    .photo-wrapper{
+        margin-top: 1rem;
+    }
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info p img {
+    margin-top: 2px;
+}
+
+.contact-info a[href]{
+    color: blue;
+}
+
+.contact-info a[href]:hover{
+    color: white;
+    background-color: blue;
+}

@@ -1,0 +1,60 @@
+.custom-style{
+    background-color: #fff;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    line-height: 1.2;
+}
+
+.card-text{
+    font-weight: 600;
+}
+
+.height{
+    min-height: 2rem;
+}
+
+.description-height{
+    min-height: 8rem;
+}
+
+p{
+    font-size: large;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+}
+
+.customButton{
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 1.2em;
+    transition: all 0.2s ease-in-out;
+}
+.customButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.badge {
+  border-radius: 20px !important;
+  padding: 0.5em 1em !important;
+}

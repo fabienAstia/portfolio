@@ -1,0 +1,14 @@
+.width-button{
+    width: 25%;
+}
+
+@media(max-width:576px){
+    .width-button{
+        width: 100%;
+    }
+}
+
+.remaining-char{
+    font-size: 0.8rem;
+    text-align: end;
+}

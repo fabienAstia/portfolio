@@ -1,0 +1,13 @@
+design/
+
+node_modules/
+dist/
+.vite/
+
+.env*
+*.log
+.vscode/
+.idea/
+
+Thumbs.db
+.DS_Store
