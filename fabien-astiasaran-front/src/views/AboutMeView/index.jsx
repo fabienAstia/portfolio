@@ -35,7 +35,7 @@ export default function AboutMe(){
                                 </p>
                                 <p>
                                     <img src={formation} alt="diplôme" className='icon' />
-                                    <span>CDA-Simplon(2024/2025)</span>
+                                    <a href='' target='_blank'>CDA-Simplon(2024/2025)</a>
                                 </p>
                                 <p>
                                     <img src={company} alt="expérience" className='icon'/>

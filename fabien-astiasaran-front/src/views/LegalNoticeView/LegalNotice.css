@@ -1,0 +1,15 @@
+.legalNoticeView .text-start{
+    max-width:500px;
+    margin: auto;
+}
+
+.legalNoticeView p{
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+
+}
+
+.legalNoticeView h2{
+    margin-top: 2rem;
+}

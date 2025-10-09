@@ -1,9 +1,30 @@
 
 .footerWrapper{
-    height: 5rem;
+    height: auto;
 }
 
 .footerWrapper .pointer{
     cursor: pointer;
 }
 
+.footerWrapper .nav-link{
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.footerWrapper .nav-link:focus{
+    text-decoration: underline 2px #f9f6dc;
+    text-underline-offset: 3px;
+}
+
+.footerWrapper .footerElement{
+    color:#f9f6dc;
+    font-family: 'Quicksand' sans-serif;
+    font-size: 1.2rem;
+}
+
+.footerWrapper .footerElement:hover{
+    color:#f9f6dc;
+    font-family: 'Quicksand' sans-serif;
+    font-size: 1.2rem;
+}

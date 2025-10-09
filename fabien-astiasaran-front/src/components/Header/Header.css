@@ -7,6 +7,7 @@
 
 .header a{
     cursor: pointer;
+    color: #f9f6dc;
 }
 
 .nav-link{
@@ -15,11 +16,11 @@
 
 .nav-link:hover{
     background-color: #888;
-    color: white;
+    color: #f9f6dc;
 }
 
 .nav-link:focus {
-    color: white !important;
-    text-decoration: underline 2px white;
+    color: #f9f6dc !important;
+    text-decoration: underline 2px #f9f6dc;
     text-underline-offset: 3px;
 }
