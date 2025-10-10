@@ -16,9 +16,13 @@ export default function Projects(){
                 <div className="card-body d-flex flex-column justify-content-between gap-3">
                     <h3 className="card-title text-center fw-bold ">{project.title}</h3>
                     <p className="card-text">{project.description}</p>
-                    <a href={project.links.url} target='_blank' className='my-2'>
+                    {project.links.url?(
+                         <a href={project.links.url} target='_blank' className='my-2'>
+                            <img src={project.image} alt='project image'/>
+                        </a>
+                    ) :(
                         <img src={project.image} alt='project image'/>
-                    </a>
+                    )}
                     <p className="text-center fw-bold justify-content-center d-flex flex-wrap gap-2">
                         {project.stack.split(',').map((tech, i) => (
                             <span key={i} className={`badge mx-1 fs-6 ${
@@ -57,12 +61,12 @@ export default function Projects(){
         </div>
     )
     return (
-        <>
+        <section className='projects'>
             <h2>Mes Projets</h2>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
                 {projectList}
             </div>  
-        </>
+        </section>
     );
 }
 
@@ -71,7 +75,7 @@ const projects = [
         id:1,
         title:'Personalities',
         description:`Plateforme de test de personnalité MBTI : passation de test, 
-                    calcul et affichage du résultat, offres d\'emplois, interface administrateur.`,
+                    calcul et affichage du résultat, offres d\'emplois, authentification, interface administrateur.`,
         image: personalities_photo,
         stack : 'VueJs, Java, PostgreSQL',
         links: {

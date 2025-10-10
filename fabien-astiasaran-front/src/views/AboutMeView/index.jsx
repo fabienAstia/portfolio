@@ -6,10 +6,22 @@ import company from '../../assets/pictos/company.svg'
 import email from '../../assets/pictos/email.svg'
 import github from '../../assets/pictos/github.svg'
 import linkedin from '../../assets/pictos/linkedin.svg'
+import certificate_picto from '../../assets/pictos/certificat.svg'
+import MyModal from '../../components/MyModal'
+import { useState } from 'react'
+import diplome from '../../assets/photos/diplome_removebg.png'
+import certificate from '../../assets/photos/certificat_agilite.png'
 
 export default function AboutMe(){
+    const [show, setShow] = useState(false);
+    const [modalContent, setModalContent] = useState('');
+    const handleClose = () => setShow(false);
+    const handleShow = (imageSrc) => {
+        setModalContent(imageSrc);
+        setShow(true);
+    }
     return(
-        <>
+        <section className='about-me'>
          <h1>À propos de moi</h1>
             <div className='row row-cols-1 row-cols-lg-2'>
                 <div className='col description'>
@@ -35,8 +47,17 @@ export default function AboutMe(){
                                 </p>
                                 <p>
                                     <img src={formation} alt="diplôme" className='icon' />
-                                    <a href='' target='_blank'>CDA-Simplon(2024/2025)</a>
+                                    <a onClick={() => handleShow({image: diplome, title:'Concepteur Développeur d\'Applications'})} 
+                                        role='button' tabIndex={0} className='buttonModal'>CDA-Simplon(2024/2025)
+                                    </a>
                                 </p>
+                                <p>
+                                    <img src={certificate_picto} alt="certificat_agilité" className='icon' />
+                                    <a onClick={() => handleShow({image: certificate, title:'Certification Agile'})} 
+                                        role='button' tabIndex={0} className='buttonModal'>Certificat Agilité
+                                    </a>
+                                </p>
+                                    <MyModal show={show} onHide={handleClose} modalContent={modalContent}/>
                                 <p>
                                     <img src={company} alt="expérience" className='icon'/>
                                     <span>Société Générale-Backend</span>
@@ -58,6 +79,6 @@ export default function AboutMe(){
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 } 

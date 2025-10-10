@@ -1,5 +1,5 @@
 .custom-style{
-    background-color: #fff;
+    background-color: #fffaf0;
     padding: 10px;
     border: 0;
     box-shadow: 0 2px 16px rgba(0,0,0,0.3);
@@ -29,12 +29,12 @@ p{
     flex-wrap: wrap;
 }
 
-img{
+.projects a img{
     max-width: 100%;
     transition: transform 0.3s ease;
 }
 
-img:hover{
+.projects a img:hover{
     transform: scale(1.05);
 }
 
