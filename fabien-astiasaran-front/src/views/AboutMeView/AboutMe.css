@@ -29,7 +29,7 @@
 
 .about-me .contact-info p {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .about-me .contact-info p img {
@@ -40,9 +40,16 @@
     color: #b8860b;
 }
 
-.about-me .contact-info a:hover{
-    color: #f9f6dc; 
+.about-me .contact-info p.hoverable:hover{
     background-color: #444;
+}
+
+.about-me .contact-info p:hover a{
+    color: #f9f6dc; 
+}
+
+.about-me .contact-info p.hoverable:hover .icon{
+     fill: #daa520;
 }
 
 .about-me .contact-info .buttonModal{

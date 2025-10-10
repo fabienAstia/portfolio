@@ -1,16 +1,17 @@
 import './AboutMe.css'
 import photo_me from '../../assets/photos/photo_fabien.png'
 import address from '../../assets/pictos/home_address.svg'
-import formation from '../../assets/pictos/formation.svg'
 import company from '../../assets/pictos/company.svg'
-import email from '../../assets/pictos/email.svg'
-import github from '../../assets/pictos/github.svg'
-import linkedin from '../../assets/pictos/linkedin.svg'
-import certificate_picto from '../../assets/pictos/certificat.svg'
-import MyModal from '../../components/MyModal'
-import { useState } from 'react'
 import diplome from '../../assets/photos/diplome_removebg.png'
 import certificate from '../../assets/photos/certificat_agilite.png'
+import Formation from '../../assets/pictos/formation.svg?react'
+import Certificate from '../../assets/pictos/certificat.svg?react'
+import Email from '../../assets/pictos/email.svg?react'
+import Github from '../../assets/pictos/github.svg?react'
+import Linkedin from '../../assets/pictos/linkedin.svg?react'
+import MyModal from '../../components/MyModal'
+import { useState } from 'react'
+
 
 export default function AboutMe(){
     const [show, setShow] = useState(false);
@@ -45,14 +46,14 @@ export default function AboutMe(){
                                     <img src={address} alt="adresse" className='icon'/>
                                     <span>75020 PARIS</span>
                                 </p>
-                                <p>
-                                    <img src={formation} alt="diplôme" className='icon' />
+                                <p className='hoverable'>
+                                    <Formation className='icon'/>
                                     <a onClick={() => handleShow({image: diplome, title:'Concepteur Développeur d\'Applications'})} 
                                         role='button' tabIndex={0} className='buttonModal'>CDA-Simplon(2024/2025)
                                     </a>
                                 </p>
-                                <p>
-                                    <img src={certificate_picto} alt="certificat_agilité" className='icon' />
+                                <p className='hoverable'>
+                                    <Certificate className='icon'/>
                                     <a onClick={() => handleShow({image: certificate, title:'Certification Agile'})} 
                                         role='button' tabIndex={0} className='buttonModal'>Certificat Agilité
                                     </a>
@@ -62,16 +63,16 @@ export default function AboutMe(){
                                     <img src={company} alt="expérience" className='icon'/>
                                     <span>Société Générale-Backend</span>
                                 </p>
-                                <p>
-                                    <img src={email} alt="email" className='icon'/>
-                                    <a href='mailto:fabien.astiasaran@gmail.com'>fabien.astiasaran@gmail.com</a>
+                                <p className='hoverable'>
+                                    <Email className='icon'/>
+                                    <a href='mailto:fabien.astiasaran@gmail.com' target='_blank'>fabien.astiasaran@gmail.com</a>
                                 </p>
-                                <p>
-                                    <img src={github} alt="lien github" className='icon'/>
+                                <p className='hoverable'>
+                                    <Github className='icon'/>
                                     <a href="https://github.com/fabienAstia" target='_blank'>GitHub</a>
                                 </p>
-                                <p>
-                                    <img src={linkedin} alt="lien linkedin" className='icon'/>
+                                <p className='hoverable'>
+                                    <Linkedin className='icon'/>
                                     <a href="https://www.linkedin.com/in/fabien-astiasaran" target='_blank'>Linkedin</a>
                                 </p>
                             </div>
