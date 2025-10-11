@@ -1,8 +1,18 @@
-.badge{
+.skills .badge{
     color: black;
 }
 
-.custom-class{
+
+.skills .category{
+    margin-bottom: 1rem;
+}
+
+.skills .custom-class1{
     color: white;
     background-color: orangered;
+}
+
+.skills .custom-class2{
+    color: white;
+    background-color: rgb(28, 168, 53);
 }

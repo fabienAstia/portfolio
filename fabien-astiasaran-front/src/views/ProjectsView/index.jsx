@@ -37,7 +37,7 @@ export default function Projects(){
                     <div className='row row-cols-1 row-cols-md-2 g-2 w-100 justify-content-center'>
                         {project.links.url && 
                         <div className='col justify-content-center'>
-                            <a href={project.links.url} className='btn btn-primary w-100 customButton' target='_blank' rel="noreferrer">Voir le site</a>
+                            <a href={project.links.url} className='btn btn-primary w-100 customButton' target='_blank' rel="noreferrer">Visiter le site</a>
                         </div>
                         }
                         {project.links.repository &&
@@ -45,14 +45,14 @@ export default function Projects(){
                             <a href={project.links.repository} className='btn btn-dark w-100 customButton' target='_blank' rel="noreferrer">Code source</a>
                         </div>
                         }
-                        {project.links.mockup &&
-                        <div className='col'>
-                            <a href={project.links.mockup} className='btn btn-outline-dark w-100 customButton' target='_blank' rel="noreferrer">Maquette (PDF)</a>
-                        </div>
-                        }
                         {project.links.dataModel &&
                             <div className='col'>
                             <a href={project.links.dataModel} className='btn btn-outline-dark w-100 customButton' target='_blank' rel="noreferrer">Conception (PDF)</a>
+                        </div>
+                        }
+                        {project.links.mockup &&
+                        <div className='col'>
+                            <a href={project.links.mockup} className='btn btn-outline-dark w-100 customButton' target='_blank' rel="noreferrer">Maquette (PDF)</a>
                         </div>
                         }
                     </div>

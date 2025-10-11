@@ -1,7 +1,16 @@
-section{
+.home section {
     margin-bottom: 3rem;
 }
 
-.scroll-margin-top{
+.home .scroll-margin-top{
     scroll-margin-top: 61px;
+}
+
+.home hr{
+    height: 2px;
+    background-color:  #9f7405;
+    display: flex;
+    max-width: 300px;
+    margin: 5rem auto;
+
 }

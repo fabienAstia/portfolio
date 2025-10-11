@@ -1,5 +1,5 @@
 .about-me h1{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 @media(min-width:992px){
@@ -14,12 +14,14 @@
 
 #photo{
     height: 170px;
-    margin-bottom: 1rem;
+    box-shadow: rgba(159, 116, 5, 0.25) 0px 4px 10px;
+    margin-right: 0.5rem;
 }
 
 @media(max-width:992px){
-    .about-me.photo-wrapper{
-        margin-top: 1rem;
+    .about-me .photo-wrapper{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
