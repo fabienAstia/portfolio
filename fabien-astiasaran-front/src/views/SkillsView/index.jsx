@@ -122,7 +122,7 @@ const skills = [
     },
     {
         id:10,
-        title:'SSH',
+        title:'Shell (Bash)',
         badgeClass:'text-bg-secondary',
         category:'tools/env'
     },
