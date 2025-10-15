@@ -1,4 +1,4 @@
-# 💼 Mon Portfolio — [Astiasaran Fabien]
+# 💼 Mon Portfolio — Astiasaran Fabien
 
 > Portfolio personnel développé en **React.js**, présentant mes projets, mon parcours et mes compétences.
 
