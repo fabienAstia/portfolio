@@ -8,7 +8,7 @@
 
 ## ✨ Aperçu
 
-<img width="1914" height="985" alt="image" src="https://github.com/user-attachments/assets/f310706b-4e85-40a0-b71f-b8c610c69a7b" />
+<img width="914" height="auto" alt="image" src="https://github.com/user-attachments/assets/f310706b-4e85-40a0-b71f-b8c610c69a7b" />
 
 
 Ce portfolio met en avant :
