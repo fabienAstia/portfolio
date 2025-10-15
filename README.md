@@ -8,7 +8,7 @@
 
 ## ✨ Aperçu
 
-![Preview du portfolio](./preview.png) <img width="1914" height="985" alt="image" src="https://github.com/user-attachments/assets/f310706b-4e85-40a0-b71f-b8c610c69a7b" />
+<img width="1914" height="985" alt="image" src="https://github.com/user-attachments/assets/f310706b-4e85-40a0-b71f-b8c610c69a7b" />
 
 
 Ce portfolio met en avant :
@@ -36,7 +36,7 @@ Ce portfolio met en avant :
 
 ```bash
 # Clone du projet
-git clone https://github.com/tonprofil/mon-portfolio.git
+git clone (https://github.com/fabienAstia/portfolio.git)
 cd mon-portfolio
 
 # Installation des dépendances
@@ -44,3 +44,14 @@ npm install
 
 # Lancement du serveur de dev
 npm run dev
+
+## 🧾 Licence
+
+Ce projet est publié sous licence MIT.
+Tu peux librement l’utiliser, le modifier et le partager, à condition de mentionner l’auteur.
+
+## 🙌 Contact
+
+- 📧 [link] <a href="https://www.example.com/my great page">link</a>fabien.astiasaran@gmail.com 
+- 💼 LinkedIn
+- 🌐 Portfolio en ligne
