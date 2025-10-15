@@ -52,6 +52,7 @@ Tu peux librement l’utiliser, le modifier et le partager, à condition de ment
 
 ## 🙌 Contact
 
-- 📧 [fabien.astiasaran@gmail.com ] <a href="mailto:fabien.astiasaran@gmail.com">link</a>
-- 💼 LinkedIn
-- 🌐 Portfolio en ligne
+- 📧 [fabien.astiasaran@gmail.com](mailto:fabien.astiasaran@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/fabien-astiasaran/)
+- 🌐 [Portfolio en ligne](https://fabien-astiasaran.com)
+
