@@ -44,6 +44,7 @@ npm install
 
 # Lancement du serveur de dev
 npm run dev
+```
 
 ## 🧾 Licence
 
