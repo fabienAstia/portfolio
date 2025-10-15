@@ -52,6 +52,6 @@ Tu peux librement l’utiliser, le modifier et le partager, à condition de ment
 
 ## 🙌 Contact
 
-- 📧 [fabien.astiasaran@gmail.com ] <a href="https://www.example.com/my great page">link</a>
+- 📧 [fabien.astiasaran@gmail.com ] <a href="mailto:fabien.astiasaran@gmail.com">link</a>
 - 💼 LinkedIn
 - 🌐 Portfolio en ligne
