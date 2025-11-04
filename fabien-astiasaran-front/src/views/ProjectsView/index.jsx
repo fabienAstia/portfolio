@@ -3,7 +3,7 @@ import personalities_photo from '../../assets/projects_resources/personalities_p
 import personalities_mockup from '../../assets/projects_resources/personalities_mockup.pdf'
 import personalities_data_model from '../../assets/projects_resources/personalities_data_model.pdf'
 const personalitiesUrl = 'https://fabien-astiasaran.com/personalities/'
-const personalitiesRepoUrl = 'https://github.com/fabienAstia/chefDoeuvre'
+const personalitiesRepoUrl = 'https://github.com/fabienAstia/personalities'
 import oriMassages_photo from '../../assets/projects_resources/ori_massages2.png'
 import ori_massages_data_model from '../../assets/projects_resources/ori_massages_data_model.pdf'
 const oriMassagesRepoUrl = 'https://github.com/fabienAstia/ori-massages'
